@@ -140,3 +140,10 @@ textarea {
 	font-weight: bold;
 	color: #fff;
 }
+
+@media screen and (max-width: 960px) {
+	.container-form-whatsapp {
+		width: 90%;
+		height: 90%;
+	}
+}
