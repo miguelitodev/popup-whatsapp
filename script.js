@@ -73,7 +73,7 @@ buttonConfirmOutrosChat.addEventListener("click", () => {
 	confirmOutrosChat.style.display = "flex";
 	nomeOutros = document.querySelector(".nomeOutros").value;
 	mensagemOutros = document.querySelector(".mensagemOutros").value;
-	let link = `https://api.whatsapp.com/send?phone=5511977976049&text=Olá eu me chamo ${nomeOutros} e eu tenho uma dúvida mais específica, segue mais informações sobre: ${mensagemOutros}`;
+	let link = `https://api.whatsapp.com/send?phone=5511977976049&text=Olá eu me chamo ${nomeOutros}\n e eu tenho uma dúvida mais específica, segue mais informações sobre:\n ${mensagemOutros}`;
 	console.log(nomeOutros, mensagemOutros, link);
 	sendInfoOutros.setAttribute("href", link);
 });
