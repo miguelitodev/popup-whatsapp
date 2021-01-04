@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>SIP Chat</title>
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="content-chat">
+			<div class="stage-chat stage-chat-initial active-chat">
+				<div>
+					<h3 class="title-chat">Fale conosco pelo Whatsapp</h3>
+					<p class="subtitle-chat">
+						Siga o passo a passo para tirar sua dúvida
+					</p>
+				</div>
+				<div class="container-links-chat">
+					<a
+						class="link-stage-chat button-chat-planos"
+						href="javascript:void(0)"
+					>
+						Dúvidas sobre os planos
+					</a>
+					<a
+						class="link-stage-chat button-chat-outros"
+						href="javascript:void(0)"
+					>
+						Outro(s)
+					</a>
+				</div>
+			</div>
+
+			<div class="stage-chat stage-chat-planos inative-chat">
+				<a
+					href="javascript:void(0)"
+					class="button-voltar-chat-planos button-voltar-chat"
+					><img src="./arrow-left.svg" alt="" /> voltar</a
+				>
+				<div>
+					<h3 class="title-chat">Dúvida(s) sobre o(s) plano(s)</h3>
+					<p class="subtitle-chat">
+						Escolha uma opção para sabermos a melhor forma de te atender
+					</p>
+				</div>
+				<div class="container-links-chat">
+					<a
+						class="link-stage-chat button-chat-plano-desenvolvimento"
+						href="javascript:void(0)"
+					>
+						Desenvolvimento
+					</a>
+					<a
+						class="link-stage-chat button-chat-plano-marketing"
+						href="javascript:void(0)"
+					>
+						Marketing
+					</a>
+				</div>
+			</div>
+			<!-- PLANO  -->
+
+			<div class="stage-chat stage-chat-plano-desenvolvimento inative-chat">
+				<a
+					href="javascript:void(0)"
+					class="button-voltar-chat-plano-desenvolvimento button-voltar-chat"
+					><img src="./arrow-left.svg" alt="" /> voltar</a
+				>
+				<div>
+					<h3 class="title-chat">Planos de desenvolvimento</h3>
+					<p class="subtitle-chat">
+						Disserte sobre o problema para nós o resolvermos o quanto antes.
+					</p>
+				</div>
+				<div>
+					<input class="input-chat" type="text" placeholder="Seu nome" />
+					<textarea
+						class="input-chat"
+						name="site-chat"
+						id="site-chat"
+						cols="30"
+						rows="10"
+					></textarea>
+				</div>
+				<div class="container-links-chat">
+					<a href="javascript:void(0)" class="button-enviar-chat">
+						ENVIAR <img src="./arrow-right.svg" alt=""
+					/></a>
+				</div>
+			</div>
+			<div class="stage-chat stage-chat-plano-marketing inative-chat">
+				<a
+					href="javascript:void(0)"
+					class="button-voltar-chat-plano-marketing button-voltar-chat"
+					><img src="./arrow-left.svg" alt="" /> voltar</a
+				>
+				<div>
+					<h3 class="title-chat">Planos de marketing</h3>
+					<p class="subtitle-chat">
+						Disserte sobre o problema para nós o resolvermos o quanto antes.
+					</p>
+				</div>
+				<div>
+					<input class="input-chat" type="text" placeholder="Seu nome" />
+					<textarea
+						class="input-chat"
+						name="site-chat"
+						id="site-chat"
+						cols="30"
+						rows="10"
+					></textarea>
+				</div>
+				<div class="container-links-chat">
+					<a href="javascript:void(0)" class="button-enviar-chat">
+						ENVIAR <img src="./arrow-right.svg" alt=""
+					/></a>
+				</div>
+			</div>
+
+			<div class="stage-chat stage-chat-outros inative-chat">
+				<a
+					href="javascript:void(0)"
+					class="button-voltar-chat-outros button-voltar-chat"
+					><img src="./arrow-left.svg" alt="" /> voltar</a
+				>
+				<div>
+					<h3 class="title-chat">Outro(s)</h3>
+					<p class="subtitle-chat">Disserte sobre sua dúvida</p>
+				</div>
+				<div>
+					<input class="input-chat nomeOutros" type="text" placeholder="Nome" />
+					<textarea
+						class="input-chat mensagemOutros"
+						name="outros-chat"
+						id="outros-chat"
+						cols="30"
+						rows="10"
+						placeholder="Escreva sua mensagem aqui"
+					></textarea>
+				</div>
+				<div class="container-links-chat">
+					<a
+						href="javascript:void(0)"
+						class="button-enviar-chat button-enviar-confirm-outros"
+					>
+						ENVIAR <img src="./arrow-right.svg" alt=""
+					/></a>
+				</div>
+			</div>
+
+			<div class="stage-chat stage-chat-confirm-outros inative-chat">
+				<a
+					href="javascript:void(0)"
+					class="button-voltar-chat-confirm-outros button-voltar-chat"
+					><img src="./arrow-left.svg" alt="" /> voltar</a
+				>
+				<div>
+					<h3 class="title-chat">Confirmação</h3>
+					<p class="subtitle-chat">
+						Confirme os dados que serão enviados, lembrando que assim que o
+						aplicativo for aberto, basta clicar em enviar para que a mensagem
+						pré configurada por nós baseada sua resposta chegue a nossa equipe
+					</p>
+				</div>
+				<div></div>
+				<div class="container-links-chat">
+					<a href="" class="button-enviar-chat button-send-info-outros">
+						ENVIAR <img src="./arrow-right.svg" alt=""
+					/></a>
+				</div>
+			</div>
+		</div>
+		<div class="chat-container"></div>
+		<script src="./script.js"></script>
+	</body>
+</html>
